@@ -1,0 +1,15 @@
+/*este css é pra respossivel para tablet*/
+
+.container__categoria{
+    display: flex;
+    padding: 0 0 0 5em;
+    
+   
+}
+.container__lista-categoria{
+    padding: 0 1em;
+    font-size: 16px;
+    font-weight: 400;
+    font-weight: bold;
+
+}

@@ -1,0 +1,154 @@
+.cabecalho__menu-hamburguer{
+    width: 24px; /*altura*/
+    height: 24px; /*largura*/
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat; /*pra não repetir a imagem*/
+    background-position: center;
+    display: inline-block;/* deixando ele desta forma podemos usar o width e o height acima*/
+
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content:space-between;/*ajusta a posição dos icones */
+    align-items: center;/*centraliza os item ao meio*/
+    position: relative;
+    
+}
+.container{
+    display: flex;/*deixa os icones tbm alinhados um a frente do outro*/
+    align-items: center;
+    padding-left: 1em;
+}
+    .container__img{
+    padding: 1em;/*espaçamento interno*/
+}
+.container__coração{
+    padding: 1em;
+    
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+
+.container__botao:checked~.lista-menu{   /*lista em menu*/
+    display: block;
+}
+.lista-menu__titulo,.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+    
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+}
+.lista-menu__link{
+    text-decoration: none;
+    color: #002F52;
+}
+
+.container__titulo{ 
+    display: none;
+}
+.container__lista-categoria{
+    display: none;
+       
+}
+.menu__opçoes{
+    margin-left: 30em;
+    display: none;
+}
+/*todas os novos css para mostrar somente em tela de 1024*/
+@media screen and (min-width:1024px){ 
+               
+ .container__titulo,.container__negrito{
+    font-size: 30px;
+   
+ }
+ .container__lista-categoria{
+    display: block;
+}
+.container__negrito{
+    font-weight: 700;
+    
+}
+.container__titulo{
+    font-weight: 400;
+    display: block;
+
+}  
+.container__categoria{
+    align-items: flex-start;
+    text-transform:uppercase;
+    
+    
+}
+.link{
+    text-decoration: none;
+    color: var(--preto);
+    
+
+}
+.cabecalho__menu-hamburguer{
+    display: none;
+    
+}
+.opçoes__botao:checked~.lista-menu{ /*lista em menu*/
+       display: block;
+}
+.container__coração{
+    display: none;
+}
+.blocos{
+    align-content: flex-start;
+}
+.lista-menu__item:hover {
+    background: #002F52;
+   
+}
+.lista-menu__item:hover>.lista-menu__link{
+    -webkit-text-fill-color: #ffffff;
+}
+}
+
+
+
+
+.descrição__link{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1728px){
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .descrição__link{
+        display: block;
+}
+.container1{
+    display: flex;
+    padding-right: 1em;
+} 
+.container__categoria{
+    padding-right: 30em;
+}
+.descrição__link{
+    color: black;
+    text-transform:uppercase;
+    font-weight: 700;
+}
+}

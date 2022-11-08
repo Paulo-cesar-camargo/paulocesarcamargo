@@ -1,0 +1,70 @@
+.banner__titulo{
+    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    text-align: center;
+    padding: 1em;
+    color: var(--branco);
+
+}
+.banner__texto{
+    padding: 1em;
+    font-size: 20px;
+    color: var(--branco);
+}
+.txt{padding: 1em;}
+.banner__pesquisa{
+    background-color:transparent;
+    border: 1px solid var(--branco); /*cor da borda */
+    border-radius: 5em; /*arredondamento das bordas*/
+    width: 100%;  
+    color: #ffffff; 
+    padding: 1em;  
+     
+}
+
+.opçoes__botao{
+    display: none;
+}
+.container__botao{
+    display: none;
+}
+
+.banner__pesquisa::placeholder{ /*modar a cor dentro da pesquisa*/
+    color: var(--branco);
+    background: url("../img/Vector.svg") no-repeat;
+    background-position: 1em;
+    text-align: center;
+    padding: 1em; 
+}
+@media screen and (min-width:1024px){ 
+
+.banner__texto{
+       font-size: 36px;
+}
+.banner__titulo{
+    font-size: 16px;
+    text-align: center;
+}  
+.banner__pesquisa{
+    width: 50%;
+}  
+}
+  
+@media screen and (min-width:1728px){ 
+    .txt1{
+        display: flex;
+        padding: 0 0 2em 36em;
+    }
+    .txt{
+        padding: 0;
+    }
+    .banner__titulo{
+        align-items: center;
+        
+    }
+    .banner__pesquisa{
+        width: 30%;
+    }
+    .banner__titulo{
+        padding:4em;
+    }
+}

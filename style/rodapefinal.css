@@ -1,0 +1,56 @@
+footer{
+    background: #ffffff;
+    
+} 
+ 
+ .rodape__final{
+    display: flex;
+    margin-left: 25em;   
+}
+
+
+.lista__rodape1-1{
+    display:flex;
+    
+}
+.lista__rodape0-0{
+    padding: 0 0 1em;
+    text-transform:uppercase;
+    color: #858585;
+}
+.lista__rodape1-1{
+    padding: 0.2em;
+    
+}
+.txt-rodape{
+    padding: 1em 1em;
+    text-decoration: none;
+    color: #474646;
+}
+
+.rodape__final{
+    display: none;
+}
+
+@media screen and (min-width:1024px){
+.rodape__final{
+      display: flex;
+}
+.final__rodape{
+    padding: 0 2em;
+    font-size: 30px;
+   
+}
+}
+
+@media screen and (min-width:1728px){
+      .lista__rodape,.lista__rodape1{
+        padding:0 5em  ;
+        
+      }
+      .lista__rodape1{
+
+        border-left: 1px solid #858585;
+      }
+
+}

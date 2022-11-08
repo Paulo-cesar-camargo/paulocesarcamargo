@@ -1,0 +1,24 @@
+@import url("style/header.css");
+@import url("style/banner.css");
+@import url("style/carrossel.css");
+@import url("style/carrossel2.css");
+@import url("style/topico.css");
+@import url("style/final.css");
+@import url("style/rodape.css");
+@import url("style/categorias.css");
+@import url("style/rodapefinal.css");
+
+:root{
+    --cor-de-fundo:#ebecee;
+    --branco:#ffffff;
+    --laranja:#f0390b;
+    --Azul-banner: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --azul-item:#09035f;
+    --bege:#E5E5E5;
+    --preto:#000000;
+
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
